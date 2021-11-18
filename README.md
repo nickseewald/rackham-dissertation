@@ -11,3 +11,5 @@ in your main document.
 ## Use
 The included template file is a bare-bones template; see http://www-personal.umich.edu/~dalle/codes/thesis-umich/downloads/ for a more explanatory tutorial.
  
+## Disclaimer
+I provide no warranty or guarantee that dissertations prepared using this template will be accepted by Rackham as submitted. It is the user's responsibility to make changes to either their document or the template to meet the requirements. 
