@@ -6,7 +6,7 @@ Simply include `rackhamdissertation.cls` in the same folder as your .tex files a
 ```
 \documentclass[thesis,12pt]{rackhamdissertation}
 ```
-in your main document.
+in your main document. Alternatively, you can add it to your texmf directory. [Here's how to do that for MikTeX](https://miktex.org/kb/texmf-roots).
 
 ## Use
 The included template file is a bare-bones template; see http://www-personal.umich.edu/~dalle/codes/thesis-umich/downloads/ for a more explanatory tutorial.
