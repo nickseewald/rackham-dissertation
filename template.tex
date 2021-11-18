@@ -1,0 +1,80 @@
+% !TeX document-id = {20224ae9-2212-4539-9951-42df58d90554}
+% !TeX TXS-program:bibliography = txs:///biber
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\documentclass[thesis,12pt]{rackhamdissertation}
+
+%% BIBLIOGRAPHY -------
+%\usepackage[style=authoryear,backend=biber]{biblatex}
+\usepackage[authordate, backend=biber, date=year, giveninits=true]{biblatex-chicago}
+\renewcommand*{\bibname}{\centerline{\large BIBLIOGRAPHY}}
+\defbibheading{thesisbib}{%
+	\clearpage %
+	\singlespacing %
+	\phantomsection %
+	\begin{minipage}{0.8\textwidth} \vspace{1in} \end{minipage} \newline
+	\centerline{\large\textbf{BIBLIOGRAPHY}} % Text to appear on bib page
+	\addcontentsline{toc}{chapter}{Bibliography} % Text to appear in ToC
+}
+
+\let\Oldsubsection\subsection
+%\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+
+% Solves ``too many alphabets'' error
+\newcommand\hmmax{0} % default 3
+\newcommand\bmmax{0} % default 3
+
+
+% Font selection
+%\usepackage{mathptmx}
+%\usepackage{MinionPro}
+\usepackage{newtxtext, newtxmath} % times new roman
+
+\floatstyle{plaintop}
+%\newfloat{program}{tp}{lop}[chapter]
+%\floatname{program}{Program}
+\restylefloat{table}
+\restylefloat{program}
+
+\usepackage[tableposition=top]{caption}
+\captionsetup{font = footnotesize}
+\captionsetup[table]{singlelinecheck=off}
+
+
+\title{A Template for Rackham-Formatted Dissertations}
+\author{Nicholas J. Seewald}
+\orcid{0000-0002-8367-0522}
+\uniqname{nseewald}
+\year=2021
+\frontpagestyle{1}
+\degree{Doctor of Philosophy}
+\department{Statistics}
+\committee{%
+	Research Associate Professor Daniel Almirall, Co-Chair \\
+	Professor Kerby Shedden, Co-Chair \\
+	Associate Professor Kelley M. Kidwell \\
+	Professor Naisyin Wang 
+	}
+\cochair{Daniel Almirall, Kerby Shedden}
+
+% If you have appendices or code/programs in the dissertation, uncomment the following lines.
+%\showlistofappendices
+%\showlistofprograms
+
+\dedication{Here's a dedication.}
+
+\acknowledgments[2]{%
+\setlength\parindent{24pt} %
+This template was built primarily by Derek J. Dalle (\url{http://www-personal.umich.edu/~dalle/codes/thesis-umich/}), Jin Ji, Roque D. Oliveria, and Jason Gilbert. My tweaks are largely cosmetic, and I'm grateful to them for (indirectly) teaching me how .cls files work.}
+
+\abstract{This is an abstract.}
+
+
+\begin{document}
+
+	\chapter{This is chapter 1}
+	
+	For a better tutorial on how to use this class, see the example from Derek Dalle at  \url{http://www-personal.umich.edu/~dalle/codes/thesis-umich/downloads/}
+
+	
+	\printbibliography[heading=thesisbib]
+\end{document}
